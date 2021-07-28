@@ -29,4 +29,14 @@
 			<image>https://raw.githubusercontent.com/pervoj/valdo-gtk/master/data/images/screenshot3.png</image>
 		</screenshot>
 	</screenshots>
+
+	<releases>
+		<release version="0.0.1" date="2021-07-28">
+			<description>
+				<p>
+					First Valdo GTK release
+				</p>
+			</description>
+		</release>
+	</releases>
 </component>

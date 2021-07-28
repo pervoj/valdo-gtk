@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: valdo-gtk\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-28 22:13+0200\n"
+"POT-Creation-Date: 2021-07-28 22:39+0200\n"
 "PO-Revision-Date: 2021-07-28 19:32+0200\n"
 "Last-Translator: Vojtěch Perník <translations@pervoj.cz>\n"
 "Language-Team: Czech <gnome-cs-list@gnome.org>\n"
@@ -39,6 +39,10 @@ msgstr "Princeton Ferro, Vojtěch Perník"
 #: data/cz.pervoj.valdo-gtk.metainfo.xml.in:14
 msgid "GTK frontend for Valdo"
 msgstr "GTK frontend pro Valdo"
+
+#: data/cz.pervoj.valdo-gtk.metainfo.xml.in:36
+msgid "First Valdo GTK release"
+msgstr "První verze Valdo GTK"
 
 #. Translators: About button title
 #: ui/main-window.glade:19
@@ -74,9 +78,13 @@ msgid "Copyright © 2021 Vojtěch Perník"
 msgstr "Copyright © 2021 Vojtěch Perník"
 
 #. Translators: Here write your names, or leave it empty. Each name on new line. You can also add email (John Doe <j.doe@example.com>). Do not translate literally!
-#: src/app.vala:44
+#: src/app.vala:45
 msgid "translator-credits"
 msgstr "translator-credits"
+
+#: src/app.vala:47
+msgid "GitHub repository"
+msgstr "Repozitář na GitHubu"
 
 #: src/page-templates.vala:49
 #, c-format

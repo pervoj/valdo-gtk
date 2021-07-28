@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-28 22:13+0200\n"
+"POT-Creation-Date: 2021-07-28 22:39+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -37,6 +37,10 @@ msgstr ""
 
 #: data/cz.pervoj.valdo-gtk.metainfo.xml.in:14
 msgid "GTK frontend for Valdo"
+msgstr ""
+
+#: data/cz.pervoj.valdo-gtk.metainfo.xml.in:36
+msgid "First Valdo GTK release"
 msgstr ""
 
 #. Translators: About button title
@@ -73,8 +77,12 @@ msgid "Copyright © 2021 Vojtěch Perník"
 msgstr ""
 
 #. Translators: Here write your names, or leave it empty. Each name on new line. You can also add email (John Doe <j.doe@example.com>). Do not translate literally!
-#: src/app.vala:44
+#: src/app.vala:45
 msgid "translator-credits"
+msgstr ""
+
+#: src/app.vala:47
+msgid "GitHub repository"
 msgstr ""
 
 #: src/page-templates.vala:49

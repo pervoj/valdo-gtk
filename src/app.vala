@@ -37,11 +37,14 @@ class ValdoGTK.App : Gtk.Application {
 			program_name = _("Valdo GTK"),
 			comments = _("Create new Vala projects from templates"),
 			copyright = _("Copyright \xc2\xa9 2021 Vojtěch Perník"),
+			version = Config.VERSION,
 			logo_icon_name = "cz.pervoj.valdo-gtk",
 			license_type = Gtk.License.GPL_3_0,
 			authors = { "Vojtěch Perník <develop@pervoj.cz>" },
 			// Translators: Here write your names, or leave it empty. Each name on new line. You can also add email (John Doe <j.doe@example.com>). Do not translate literally!
-			translator_credits = _("translator-credits")
+			translator_credits = _("translator-credits"),
+			website = "https://github.com/pervoj/valdo-gtk",
+			website_label = _("GitHub repository")
 		};
 		about_dialog.show_all ();
 	}
