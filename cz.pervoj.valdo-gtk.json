@@ -29,7 +29,7 @@
             "sources" : [
                 {
                     "type" : "git",
-                    "path" : "https://github.com/pervoj/valdo-gtk"
+                    "url" : "https://github.com/pervoj/valdo-gtk"
                 }
             ]
         }
