@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-28 20:31+0200\n"
+"POT-Creation-Date: 2021-07-28 22:13+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -31,8 +31,12 @@ msgstr ""
 msgid "Create new Vala projects from templates"
 msgstr ""
 
-#: data/cz.pervoj.valdo-gtk.metainfo.xml.in:12
+#: data/cz.pervoj.valdo-gtk.metainfo.xml.in:11
 msgid "Princeton Ferro, Vojtěch Perník"
+msgstr ""
+
+#: data/cz.pervoj.valdo-gtk.metainfo.xml.in:14
+msgid "GTK frontend for Valdo"
 msgstr ""
 
 #. Translators: About button title

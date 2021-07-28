@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: valdo-gtk\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-28 20:31+0200\n"
+"POT-Creation-Date: 2021-07-28 22:13+0200\n"
 "PO-Revision-Date: 2021-07-28 19:32+0200\n"
 "Last-Translator: Vojtěch Perník <translations@pervoj.cz>\n"
 "Language-Team: Czech <gnome-cs-list@gnome.org>\n"
@@ -32,9 +32,13 @@ msgstr "Valdo GTK"
 msgid "Create new Vala projects from templates"
 msgstr "Vytvářejte nové projekty ve Vale z šablon"
 
-#: data/cz.pervoj.valdo-gtk.metainfo.xml.in:12
+#: data/cz.pervoj.valdo-gtk.metainfo.xml.in:11
 msgid "Princeton Ferro, Vojtěch Perník"
 msgstr "Princeton Ferro, Vojtěch Perník"
+
+#: data/cz.pervoj.valdo-gtk.metainfo.xml.in:14
+msgid "GTK frontend for Valdo"
+msgstr "GTK frontend pro Valdo"
 
 #. Translators: About button title
 #: ui/main-window.glade:19
@@ -128,6 +132,3 @@ msgstr "Chyba regex: %s"
 #, c-format
 msgid "Error creating template: %s"
 msgstr "Chyba při vytváření šablony: %s"
-
-#~ msgid "Keyboard shortcuts"
-#~ msgstr "Klávesové zkratky"
