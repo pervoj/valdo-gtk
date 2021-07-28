@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Valdo GTK
+Comment=Create new Vala projects from templates
+Exec=valdo-gtk
+# Translators: Just name of icon
+Icon=cz.pervoj.valdo-gtk
+Terminal=false
+Type=Application
+Categories=GTK;Development;
+StartupNotify=true

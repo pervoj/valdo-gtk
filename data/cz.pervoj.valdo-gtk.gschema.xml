@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+	<schema id="cz.pervoj.valdo-gtk" path="/cz/pervoj/valdo-gtk/">
+		<key name="latest-projects" type="a(ss)">
+			<default>[]</default>
+			<summary>Latest projects</summary>
+			<description>The list of latest projects created by Valdo GTK</description>
+		</key>
+	</schema>
+</schemalist>

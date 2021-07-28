@@ -1,0 +1,129 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-07-28 20:31+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Translators: Application name
+#: data/cz.pervoj.valdo-gtk.desktop.in:3
+#: data/cz.pervoj.valdo-gtk.metainfo.xml.in:7 ui/main-window.glade:60
+#: src/app.vala:9 src/app.vala:37
+msgid "Valdo GTK"
+msgstr ""
+
+#. Translators: Application description
+#: data/cz.pervoj.valdo-gtk.desktop.in:4
+#: data/cz.pervoj.valdo-gtk.metainfo.xml.in:8 ui/main-window.glade:61
+#: src/app.vala:38
+msgid "Create new Vala projects from templates"
+msgstr ""
+
+#: data/cz.pervoj.valdo-gtk.metainfo.xml.in:12
+msgid "Princeton Ferro, Vojtěch Perník"
+msgstr ""
+
+#. Translators: About button title
+#: ui/main-window.glade:19
+msgid "About application"
+msgstr ""
+
+#. Translators: Quit button title
+#: ui/main-window.glade:32
+msgid "Quit"
+msgstr ""
+
+#. Translators: Title of the latest project list
+#: ui/page-list-latest-projects.glade:48
+msgid "Latest projects:"
+msgstr ""
+
+#. Translators: Title of the available templates list
+#: ui/page-list-available-templates.glade:40
+msgid "Available templates:"
+msgstr ""
+
+#: ui/page-list-template-variables.glade:47
+msgid "Template variables:"
+msgstr ""
+
+#. Translators: Success page title
+#: ui/page-list-creating-success.glade:37
+msgid "Project successfully created"
+msgstr ""
+
+#: src/app.vala:39
+msgid "Copyright © 2021 Vojtěch Perník"
+msgstr ""
+
+#. Translators: Here write your names, or leave it empty. Each name on new line. You can also add email (John Doe <j.doe@example.com>). Do not translate literally!
+#: src/app.vala:44
+msgid "translator-credits"
+msgstr ""
+
+#: src/page-templates.vala:49
+#, c-format
+msgid "Error: %s"
+msgstr ""
+
+#: src/page-templates.vala:51
+#, c-format
+msgid "Error, could not enumerate templates: %s"
+msgstr ""
+
+#: src/page-variables.vala:32
+msgid "Template name:"
+msgstr ""
+
+#: src/page-variables.vala:36
+msgid "Project location:"
+msgstr ""
+
+#: src/page-variables.vala:37
+msgid "Choose project location"
+msgstr ""
+
+#: src/page-variables.vala:53
+#, c-format
+msgid "Enter %s:"
+msgstr ""
+
+#: src/page-variables.vala:76
+msgid "Create"
+msgstr ""
+
+#: src/page-variables.vala:94
+msgid "Error: select project location"
+msgstr ""
+
+#: src/page-variables.vala:104
+#, c-format
+msgid "Error: %s was not specified"
+msgstr ""
+
+#: src/page-variables.vala:112
+#, c-format
+msgid "Error: %s must match the pattern %s"
+msgstr ""
+
+#: src/page-variables.vala:116
+#, c-format
+msgid "Regex error: %s"
+msgstr ""
+
+#: src/page-variables.vala:142
+#, c-format
+msgid "Error creating template: %s"
+msgstr ""

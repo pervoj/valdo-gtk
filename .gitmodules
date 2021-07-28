@@ -1,0 +1,3 @@
+[submodule "modules/valdo"]
+	path = modules/valdo
+	url = https://github.com/Prince781/valdo

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gresources>
+	<gresource prefix="/cz/pervoj/valdo-gtk">
+		<file>main-window.glade</file>
+		<file>list-item.glade</file>
+		<file>form-list-item.glade</file>
+		<file>page-list-latest-projects.glade</file>
+		<file>page-list-available-templates.glade</file>
+		<file>page-list-template-variables.glade</file>
+		<file>page-list-creating-success.glade</file>
+	</gresource>
+</gresources>
