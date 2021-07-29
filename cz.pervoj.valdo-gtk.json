@@ -9,27 +9,14 @@
         "--socket=fallback-x11",
         "--socket=wayland"
     ],
-    "cleanup" : [
-        "/include",
-        "/lib/pkgconfig",
-        "/man",
-        "/share/doc",
-        "/share/gtk-doc",
-        "/share/man",
-        "/share/pkgconfig",
-        "/share/vala",
-        "*.la",
-        "*.a"
-    ],
     "modules" : [
         {
             "name" : "valdo-gtk",
-            "builddir" : true,
             "buildsystem" : "meson",
             "sources" : [
                 {
-                    "type" : "git",
-                    "url" : "https://github.com/pervoj/valdo-gtk"
+                    "type" : "dir",
+                    "path" : "."
                 }
             ]
         }
