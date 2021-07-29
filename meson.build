@@ -4,14 +4,6 @@ project('valdo-gtk', 'vala', 'c',
 
 templates_dir = get_option('prefix') / get_option('datadir') / 'valdo-gtk' / 'templates'
 
-deps = [
-  dependency('glib-2.0'),
-  dependency('gobject-2.0'),
-  dependency('gio-2.0'),
-  dependency('json-glib-1.0'),
-  dependency('gtk+-3.0')
-]
-
 add_project_arguments ('-DGETTEXT_PACKAGE=@0@'.format(meson.project_name ()),
 	language: 'c'
 )
@@ -42,6 +34,15 @@ project_config_dep = declare_dependency(
     include_directories: include_directories('.')
 )
 
+deps = [
+  dependency('glib-2.0'),
+  dependency('gobject-2.0'),
+  dependency('gio-2.0'),
+  dependency('json-glib-1.0'),
+  dependency('gtk+-3.0'),
+  project_config_dep
+]
+
 i18n = import('i18n')
 
 subdir('data')
@@ -61,6 +62,7 @@ executable('valdo-gtk',
            [src, valdo_classes, resources],
            dependencies: deps,
            vala_args: [resource_args],
+		   gui_app: true,
 		   install: true)
 
 meson.add_install_script('build-aux/meson/postinstall.py')
