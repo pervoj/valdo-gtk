@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-28 22:39+0200\n"
+"POT-Creation-Date: 2021-07-30 21:23+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -125,17 +125,22 @@ msgstr ""
 msgid "Error: %s was not specified"
 msgstr ""
 
-#: src/page-variables.vala:112
+#: src/page-variables.vala:113
 #, c-format
 msgid "Error: %s must match the pattern %s"
 msgstr ""
 
-#: src/page-variables.vala:116
+#: src/page-variables.vala:115
+#, c-format
+msgid "Error: %s must be valid email"
+msgstr ""
+
+#: src/page-variables.vala:120
 #, c-format
 msgid "Regex error: %s"
 msgstr ""
 
-#: src/page-variables.vala:142
+#: src/page-variables.vala:146
 #, c-format
 msgid "Error creating template: %s"
 msgstr ""

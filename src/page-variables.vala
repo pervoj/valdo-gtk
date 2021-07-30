@@ -60,7 +60,7 @@ class ValdoGTK.VariablesPage : Gtk.ScrolledWindow {
 
 			item.pack_start (entry);
 
-			if (variable.pattern != null) {
+			if (variable.pattern != null && variable.name != "USERADDR") {
 				item.pack_start (get_italic_label (/* FIXME: non-null */(!)variable.pattern));
 			}
 			
@@ -109,7 +109,11 @@ class ValdoGTK.VariablesPage : Gtk.ScrolledWindow {
 						try {
 							if (!new Regex (/* FIXME: non-null */(!)variable.pattern).match (/* FIXME: non-null */(!)text)) {
 								success = false;
-								show_error_dialog (_("Error: %s must match the pattern %s").printf (variable.summary, /* FIXME: non-null */(!)variable.pattern));
+								if (variable.name != "USERADDR") {
+									show_error_dialog (_("Error: %s must match the pattern %s").printf (variable.summary, /* FIXME: non-null */(!)variable.pattern));
+								} else {
+									show_error_dialog (_("Error: %s must be valid email").printf (variable.summary));
+								}
 								break;
 							}
 						} catch (Error e) {

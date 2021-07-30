@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: valdo-gtk\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-28 22:39+0200\n"
-"PO-Revision-Date: 2021-07-28 19:32+0200\n"
+"POT-Creation-Date: 2021-07-30 21:23+0200\n"
+"PO-Revision-Date: 2021-07-30 21:26+0200\n"
 "Last-Translator: Vojtěch Perník <translations@pervoj.cz>\n"
 "Language-Team: Czech <gnome-cs-list@gnome.org>\n"
 "Language: cs\n"
@@ -126,17 +126,22 @@ msgstr "Chyba: vyberte umístění projektu"
 msgid "Error: %s was not specified"
 msgstr "Chyba: %s nebylo nastaveno"
 
-#: src/page-variables.vala:112
+#: src/page-variables.vala:113
 #, c-format
 msgid "Error: %s must match the pattern %s"
 msgstr "Chyba: %s musí odpovídat vzoru %s"
 
-#: src/page-variables.vala:116
+#: src/page-variables.vala:115
+#, c-format
+msgid "Error: %s must be valid email"
+msgstr "Chyba: %s musí být validní email"
+
+#: src/page-variables.vala:120
 #, c-format
 msgid "Regex error: %s"
 msgstr "Chyba regex: %s"
 
-#: src/page-variables.vala:142
+#: src/page-variables.vala:146
 #, c-format
 msgid "Error creating template: %s"
 msgstr "Chyba při vytváření šablony: %s"

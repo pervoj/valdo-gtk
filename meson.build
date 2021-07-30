@@ -19,7 +19,7 @@ set_defines = [
 	['TEMPLATES', templates_dir],
 	['VERSION', meson.project_version()],
 	['LOCALEDIR', join_paths(get_option('prefix'), get_option('localedir'))],
-    ['GETTEXT_PACKAGE', meson.project_name()]
+  ['GETTEXT_PACKAGE', meson.project_name()]
 ]
 config_h = configuration_data()
 foreach define: set_defines
@@ -51,7 +51,16 @@ subdir('src')
 subdir('po')
 subdir('modules/valdo/templates')
 
-valdo_classes = [
+valdo_conf_data = configuration_data()
+valdo_conf_data.set('DATA_DIR', templates_dir)
+valdo_conf_data.set('VCS_TAG', '@VCS_TAG@')
+valdo_config_vala = configure_file(
+  input: 'modules/valdo/src/config.vala.in',
+  output: 'config.vala',
+  configuration: valdo_conf_data
+)
+valdo_files = [
+  valdo_config_vala,
   'modules/valdo/src/templateengine.vala',
   'modules/valdo/src/template.vala',
   'modules/valdo/src/variable.vala',
@@ -59,7 +68,7 @@ valdo_classes = [
 ]
 
 executable('valdo-gtk',
-           [src, valdo_classes, resources],
+           [src, valdo_files, resources],
            dependencies: deps,
            vala_args: [resource_args],
 		   gui_app: true,
