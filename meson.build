@@ -1,5 +1,5 @@
 project('valdo-gtk', 'vala', 'c',
-  version: '0.0.1',
+  version: '0.0.2',
   license: 'GPL-3.0-or-later')
 
 templates_dir = get_option('prefix') / get_option('datadir') / 'valdo-gtk' / 'templates'
