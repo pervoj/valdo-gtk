@@ -62,10 +62,14 @@ class ValdoGTK.VariablesPage : Gtk.ScrolledWindow {
 
 			if (variable.pattern != null && variable.name != "USERADDR") {
 				string pattern = /* FIXME: non-null */(!)variable.pattern;
+				string? tooltip = null;
 				if (pattern.length > 60) {
+					tooltip = pattern;
 					pattern = pattern[0:60] + "...";
 				}
-				item.pack_start (get_italic_label (pattern));
+				var pattern_label = get_italic_label (pattern);
+				pattern_label.set_tooltip_text (tooltip);
+				item.pack_start (pattern_label);
 			}
 			
 			var row = new Gtk.ListBoxRow ();
