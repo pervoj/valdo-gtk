@@ -9,6 +9,8 @@ class ValdoGTK.VariablesPage : Gtk.ScrolledWindow {
 
 	private Settings settings = new Settings ("cz.pervoj.valdo-gtk");
 
+	public HashTable<string, string> substitutions = new HashTable<string, string> (str_hash, str_equal);
+
 	public VariablesPage (Gtk.Window parent_window, Gtk.Stack parent_stack, ProjectsPage projects_page) {
 		this.parent_window = parent_window;
 		this.parent_stack = parent_stack;
@@ -55,7 +57,19 @@ class ValdoGTK.VariablesPage : Gtk.ScrolledWindow {
 			entries[variable.name] = entry;
 
 			if (variable.default != null) {
-				entry.set_text (/* FIXME: non-null */((!)variable.default).to_string ());
+				// setup this entry to receive change events from previous entries
+				foreach (unowned var referenced_var in variable.default.referenced_vars) {
+					var referenced_entry = entries[referenced_var];
+
+					referenced_entry.bind_property ("text", entry, "text", BindingFlags.SYNC_CREATE, (binding, from, ref to) => {
+						substitutions[referenced_var] = from.get_string ();
+						to = variable.default.substitute (substitutions);
+						return true;
+					});
+				}
+
+				entry.text = variable.default.substitute (substitutions);
+				substitutions[variable.name] = entry.text;
 			}
 
 			item.pack_start (entry);
