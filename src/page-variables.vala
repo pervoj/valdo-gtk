@@ -111,7 +111,7 @@ class ValdoGTK.VariablesPage : Gtk.ScrolledWindow {
 		ok_button.clicked.connect (() => {
 			// Check if everything was setted correctly
 			bool success = true;
-			if (path_button.get_current_folder () == null) {
+			if (path_button.get_uri () == null) {
 				success = false;
 				show_error_dialog (_("Error: select project location"));
 			}
