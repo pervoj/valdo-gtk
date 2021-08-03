@@ -6,7 +6,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master
-    - uses: nahuelwexd/flatpak-builder-action@gnome-40
+    - uses: nahuelwexd/flatpak-builder-action@gnome-3-36
       with:
         manifest-path: cz.pervoj.valdo-gtk.json
         meson-args: -Dprofile=development
