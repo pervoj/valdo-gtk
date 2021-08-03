@@ -17,5 +17,5 @@ jobs:
     - uses: bilelmoussaoui/flatpak-github-actions/flatpak-builder@v3
       with:
         bundle: valdo-gtk.flatpak
-        manifest-path: cz.pervoj.valdo-gtk.json
+        manifest-path: build-aux/flatpak/cz.pervoj.valdo-gtk.Devel.json
         cache-key: flatpak-builder-${{ github.sha }}
