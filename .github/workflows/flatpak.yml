@@ -5,7 +5,7 @@ on:
 name: Flatpak
 jobs:
   flatpak:
-    name: "Flatpak"
+    name: Build flatpak from master
     runs-on: ubuntu-latest
     container:
       image: bilelmoussaoui/flatpak-github-actions:gnome-40
@@ -16,6 +16,6 @@ jobs:
         submodules: recursive
     - uses: bilelmoussaoui/flatpak-github-actions/flatpak-builder@v3
       with:
-        bundle: cz.pervoj.devel.valdo-gtk.flatpak
-        manifest-path: build-aux/flatpak/cz.pervoj.devel.valdo-gtk.json
+        bundle: cz.pervoj.valdo-gtk.master.flatpak
+        manifest-path: cz.pervoj.valdo-gtk.json
         cache-key: flatpak-builder-${{ github.sha }}
