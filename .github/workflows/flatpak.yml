@@ -16,6 +16,6 @@ jobs:
         submodules: recursive
     - uses: bilelmoussaoui/flatpak-github-actions/flatpak-builder@v3
       with:
-        bundle: valdo-gtk.flatpak
-        manifest-path: build-aux/flatpak/cz.pervoj.valdo-gtk.Devel.json
+        bundle: cz.pervoj.devel.valdo-gtk.flatpak
+        manifest-path: build-aux/flatpak/cz.pervoj.devel.valdo-gtk.json
         cache-key: flatpak-builder-${{ github.sha }}

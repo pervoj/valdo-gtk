@@ -1,5 +1,5 @@
 {
-    "app-id" : "cz.pervoj.valdo-gtk.Devel",
+    "app-id" : "cz.pervoj.devel.valdo-gtk",
     "runtime" : "org.gnome.Platform",
     "runtime-version" : "40",
     "sdk" : "org.gnome.Sdk",
