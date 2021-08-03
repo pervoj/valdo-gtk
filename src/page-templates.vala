@@ -2,6 +2,7 @@
 class ValdoGTK.TemplatesPage : Gtk.ScrolledWindow {
 	[GtkChild] private unowned Gtk.ListBox template_list;
 
+	// Variables for changing state of other components
 	private Gtk.Window parent_window;
 	private Gtk.Stack parent_stack;
 	private VariablesPage variables_page;
@@ -35,7 +36,7 @@ class ValdoGTK.TemplatesPage : Gtk.ScrolledWindow {
 					row.activate.connect (() => { open_template (template_name, template); });
 
 					row.button_release_event.connect ((event) => {
-						if (event.button == 1) { open_template (template_name, template); }
+						if (event.button == 1) { row.activate (); }
 						return false;
 					});
 

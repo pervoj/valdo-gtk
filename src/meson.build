@@ -7,4 +7,5 @@ src = files([
   'page-templates.vala',
   'page-variables.vala',
   'page-success.vala',
+  'preferences-window.vala',
 ])

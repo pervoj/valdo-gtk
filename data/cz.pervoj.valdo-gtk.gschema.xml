@@ -1,10 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <schemalist>
-	<schema id="cz.pervoj.valdo-gtk" path="/cz/pervoj/valdo-gtk/">
+	<schema id="cz.pervoj.valdo-gtk.projects" path="/cz/pervoj/valdo-gtk/projects/">
 		<key name="latest-projects" type="a(ss)">
 			<default>[]</default>
 			<summary>Latest projects</summary>
 			<description>The list of latest projects created by Valdo GTK</description>
+		</key>
+	</schema>
+	<schema id="cz.pervoj.valdo-gtk.preferences" path="/cz/pervoj/valdo-gtk/preferences/">
+		<key name="opening-enable" type="b">
+			<default>false</default>
+			<summary>Enable project openning</summary>
+			<description>Enable project openning after click</description>
+		</key>
+		<key name="opening-command" type="s">
+			<default>"code {path}"</default>
+			<summary>Project openning command</summary>
+			<description>Include {path} for project path</description>
 		</key>
 	</schema>
 </schemalist>

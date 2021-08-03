@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-30 21:23+0200\n"
+"POT-Creation-Date: 2021-08-03 10:46+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,14 +19,14 @@ msgstr ""
 
 #. Translators: Application name
 #: data/cz.pervoj.valdo-gtk.desktop.in:3
-#: data/cz.pervoj.valdo-gtk.metainfo.xml.in:7 ui/main-window.glade:60
+#: data/cz.pervoj.valdo-gtk.metainfo.xml.in:7 ui/main-window.glade:74
 #: src/app.vala:9 src/app.vala:37
 msgid "Valdo GTK"
 msgstr ""
 
 #. Translators: Application description
 #: data/cz.pervoj.valdo-gtk.desktop.in:4
-#: data/cz.pervoj.valdo-gtk.metainfo.xml.in:8 ui/main-window.glade:61
+#: data/cz.pervoj.valdo-gtk.metainfo.xml.in:8 ui/main-window.glade:75
 #: src/app.vala:38
 msgid "Create new Vala projects from templates"
 msgstr ""
@@ -39,17 +39,42 @@ msgstr ""
 msgid "GTK frontend for Valdo"
 msgstr ""
 
-#: data/cz.pervoj.valdo-gtk.metainfo.xml.in:36
+#: data/cz.pervoj.valdo-gtk.metainfo.xml.in:37
+msgid "Support for substitutions in variables"
+msgstr ""
+
+#: data/cz.pervoj.valdo-gtk.metainfo.xml.in:38
+msgid "Opening projects using a user-defined command by left-click"
+msgstr ""
+
+#: data/cz.pervoj.valdo-gtk.metainfo.xml.in:39
+msgid "Removing projects from the list by right-clicking"
+msgstr ""
+
+#: data/cz.pervoj.valdo-gtk.metainfo.xml.in:46
+msgid "New template variables (AUTHOR, USERNAME and USERADDR)"
+msgstr ""
+
+#: data/cz.pervoj.valdo-gtk.metainfo.xml.in:47
+msgid "New template (elementary OS App)"
+msgstr ""
+
+#: data/cz.pervoj.valdo-gtk.metainfo.xml.in:53
 msgid "First Valdo GTK release"
 msgstr ""
 
-#. Translators: About button title
+#. Translators: Preferences button title
 #: ui/main-window.glade:19
+msgid "Preferences"
+msgstr ""
+
+#. Translators: About button title
+#: ui/main-window.glade:33
 msgid "About application"
 msgstr ""
 
 #. Translators: Quit button title
-#: ui/main-window.glade:32
+#: ui/main-window.glade:46
 msgid "Quit"
 msgstr ""
 
@@ -72,6 +97,31 @@ msgstr ""
 msgid "Project successfully created"
 msgstr ""
 
+#. Translators: Checkbox label text
+#: ui/preferences-window.glade:58
+msgid "Enable project openning:"
+msgstr ""
+
+#. Translators: Entry label text
+#: ui/preferences-window.glade:72
+msgid "Project openning command:"
+msgstr ""
+
+#. Translators: Entry placeholder text
+#: ui/preferences-window.glade:87
+msgid "Include {path} for project path"
+msgstr ""
+
+#. Translators: Title of preferences category
+#: ui/preferences-window.glade:117
+msgid "Project openning"
+msgstr ""
+
+#. Translators: Preferences window title
+#: ui/preferences-window.glade:140
+msgid "Valdo GTK Preferences"
+msgstr ""
+
 #: src/app.vala:39
 msgid "Copyright © 2021 Vojtěch Perník"
 msgstr ""
@@ -85,62 +135,72 @@ msgstr ""
 msgid "GitHub repository"
 msgstr ""
 
-#: src/page-templates.vala:49
+#: src/page-projects.vala:66
+#, c-format
+msgid "Error opening project: %s"
+msgstr ""
+
+#: src/page-projects.vala:73
+#, c-format
+msgid "Do you really want to remove project %s?"
+msgstr ""
+
+#: src/page-templates.vala:50
 #, c-format
 msgid "Error: %s"
 msgstr ""
 
-#: src/page-templates.vala:51
+#: src/page-templates.vala:52
 #, c-format
 msgid "Error, could not enumerate templates: %s"
 msgstr ""
 
-#: src/page-variables.vala:32
+#: src/page-variables.vala:34
 msgid "Template name:"
 msgstr ""
 
-#: src/page-variables.vala:36
+#: src/page-variables.vala:38
 msgid "Project location:"
 msgstr ""
 
-#: src/page-variables.vala:37
+#: src/page-variables.vala:39
 msgid "Choose project location"
 msgstr ""
 
-#: src/page-variables.vala:53
+#: src/page-variables.vala:55
 #, c-format
 msgid "Enter %s:"
 msgstr ""
 
-#: src/page-variables.vala:76
+#: src/page-variables.vala:98
 msgid "Create"
 msgstr ""
 
-#: src/page-variables.vala:94
+#: src/page-variables.vala:116
 msgid "Error: select project location"
 msgstr ""
 
-#: src/page-variables.vala:104
+#: src/page-variables.vala:126
 #, c-format
 msgid "Error: %s was not specified"
 msgstr ""
 
-#: src/page-variables.vala:113
+#: src/page-variables.vala:135
 #, c-format
 msgid "Error: %s must match the pattern %s"
 msgstr ""
 
-#: src/page-variables.vala:115
+#: src/page-variables.vala:137
 #, c-format
 msgid "Error: %s must be valid email"
 msgstr ""
 
-#: src/page-variables.vala:120
+#: src/page-variables.vala:142
 #, c-format
 msgid "Regex error: %s"
 msgstr ""
 
-#: src/page-variables.vala:146
+#: src/page-variables.vala:168
 #, c-format
 msgid "Error creating template: %s"
 msgstr ""

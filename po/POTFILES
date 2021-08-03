@@ -8,6 +8,7 @@ ui/page-list-template-variables.glade
 ui/page-list-creating-success.glade
 ui/list-item.glade
 ui/form-list-item.glade
+ui/preferences-window.glade
 
 src/app.vala
 src/main-window.vala

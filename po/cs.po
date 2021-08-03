@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: valdo-gtk\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-30 21:23+0200\n"
-"PO-Revision-Date: 2021-07-30 21:26+0200\n"
+"POT-Creation-Date: 2021-08-03 10:46+0200\n"
+"PO-Revision-Date: 2021-08-03 10:46+0200\n"
 "Last-Translator: Vojtěch Perník <translations@pervoj.cz>\n"
 "Language-Team: Czech <gnome-cs-list@gnome.org>\n"
 "Language: cs\n"
@@ -20,14 +20,14 @@ msgstr ""
 
 #. Translators: Application name
 #: data/cz.pervoj.valdo-gtk.desktop.in:3
-#: data/cz.pervoj.valdo-gtk.metainfo.xml.in:7 ui/main-window.glade:60
+#: data/cz.pervoj.valdo-gtk.metainfo.xml.in:7 ui/main-window.glade:74
 #: src/app.vala:9 src/app.vala:37
 msgid "Valdo GTK"
 msgstr "Valdo GTK"
 
 #. Translators: Application description
 #: data/cz.pervoj.valdo-gtk.desktop.in:4
-#: data/cz.pervoj.valdo-gtk.metainfo.xml.in:8 ui/main-window.glade:61
+#: data/cz.pervoj.valdo-gtk.metainfo.xml.in:8 ui/main-window.glade:75
 #: src/app.vala:38
 msgid "Create new Vala projects from templates"
 msgstr "Vytvářejte nové projekty ve Vale z šablon"
@@ -40,17 +40,44 @@ msgstr "Princeton Ferro, Vojtěch Perník"
 msgid "GTK frontend for Valdo"
 msgstr "GTK frontend pro Valdo"
 
-#: data/cz.pervoj.valdo-gtk.metainfo.xml.in:36
+#: data/cz.pervoj.valdo-gtk.metainfo.xml.in:37
+msgid "Support for substitutions in variables"
+msgstr "Podpora substitucí v proměnných"
+
+#: data/cz.pervoj.valdo-gtk.metainfo.xml.in:38
+msgid "Opening projects using a user-defined command by left-click"
+msgstr ""
+"Otevření projektů pomocí uživatelsky definovaného příkazu kliknutím levým "
+"tlačítkem"
+
+#: data/cz.pervoj.valdo-gtk.metainfo.xml.in:39
+msgid "Removing projects from the list by right-clicking"
+msgstr "Odebírání projektů ze seznamu kliknutím pravým tlačítkem"
+
+#: data/cz.pervoj.valdo-gtk.metainfo.xml.in:46
+msgid "New template variables (AUTHOR, USERNAME and USERADDR)"
+msgstr "Nové proměnné šablony (AUTHOR, USERNAME a USERADDR)"
+
+#: data/cz.pervoj.valdo-gtk.metainfo.xml.in:47
+msgid "New template (elementary OS App)"
+msgstr "Nová šablona (Aplikace elementary OS)"
+
+#: data/cz.pervoj.valdo-gtk.metainfo.xml.in:53
 msgid "First Valdo GTK release"
 msgstr "První verze Valdo GTK"
 
-#. Translators: About button title
+#. Translators: Preferences button title
 #: ui/main-window.glade:19
+msgid "Preferences"
+msgstr "Předvolby"
+
+#. Translators: About button title
+#: ui/main-window.glade:33
 msgid "About application"
 msgstr "O aplikaci"
 
 #. Translators: Quit button title
-#: ui/main-window.glade:32
+#: ui/main-window.glade:46
 msgid "Quit"
 msgstr "Ukončit"
 
@@ -73,6 +100,31 @@ msgstr "Proměnné šablony:"
 msgid "Project successfully created"
 msgstr "Projekt byl úsěšně vytvořen"
 
+#. Translators: Checkbox label text
+#: ui/preferences-window.glade:58
+msgid "Enable project openning:"
+msgstr "Povolit otevírání projektů:"
+
+#. Translators: Entry label text
+#: ui/preferences-window.glade:72
+msgid "Project openning command:"
+msgstr "Příkaz k otevření projektu:"
+
+#. Translators: Entry placeholder text
+#: ui/preferences-window.glade:87
+msgid "Include {path} for project path"
+msgstr "Zahrňte {path} pro cestu k projektu"
+
+#. Translators: Title of preferences category
+#: ui/preferences-window.glade:117
+msgid "Project openning"
+msgstr "Otevírání projektů"
+
+#. Translators: Preferences window title
+#: ui/preferences-window.glade:140
+msgid "Valdo GTK Preferences"
+msgstr "Předvolby Valdo GTK"
+
 #: src/app.vala:39
 msgid "Copyright © 2021 Vojtěch Perník"
 msgstr "Copyright © 2021 Vojtěch Perník"
@@ -86,62 +138,72 @@ msgstr "translator-credits"
 msgid "GitHub repository"
 msgstr "Repozitář na GitHubu"
 
-#: src/page-templates.vala:49
+#: src/page-projects.vala:66
+#, c-format
+msgid "Error opening project: %s"
+msgstr "Chyba při otevírání projektu: %s"
+
+#: src/page-projects.vala:73
+#, c-format
+msgid "Do you really want to remove project %s?"
+msgstr "Opravdu chcete odebrat projekt %s?"
+
+#: src/page-templates.vala:50
 #, c-format
 msgid "Error: %s"
 msgstr "Chyba: %s"
 
-#: src/page-templates.vala:51
+#: src/page-templates.vala:52
 #, c-format
 msgid "Error, could not enumerate templates: %s"
 msgstr "Chyba, nepodařilo se vypsat šablony: %s"
 
-#: src/page-variables.vala:32
+#: src/page-variables.vala:34
 msgid "Template name:"
 msgstr "Název šablony:"
 
-#: src/page-variables.vala:36
+#: src/page-variables.vala:38
 msgid "Project location:"
 msgstr "Umístění projektu:"
 
-#: src/page-variables.vala:37
+#: src/page-variables.vala:39
 msgid "Choose project location"
 msgstr "Vyberte umístění projektu"
 
-#: src/page-variables.vala:53
+#: src/page-variables.vala:55
 #, c-format
 msgid "Enter %s:"
 msgstr "Zadejte %s:"
 
-#: src/page-variables.vala:76
+#: src/page-variables.vala:98
 msgid "Create"
 msgstr "Vyvořit"
 
-#: src/page-variables.vala:94
+#: src/page-variables.vala:116
 msgid "Error: select project location"
 msgstr "Chyba: vyberte umístění projektu"
 
-#: src/page-variables.vala:104
+#: src/page-variables.vala:126
 #, c-format
 msgid "Error: %s was not specified"
 msgstr "Chyba: %s nebylo nastaveno"
 
-#: src/page-variables.vala:113
+#: src/page-variables.vala:135
 #, c-format
 msgid "Error: %s must match the pattern %s"
 msgstr "Chyba: %s musí odpovídat vzoru %s"
 
-#: src/page-variables.vala:115
+#: src/page-variables.vala:137
 #, c-format
 msgid "Error: %s must be valid email"
 msgstr "Chyba: %s musí být validní email"
 
-#: src/page-variables.vala:120
+#: src/page-variables.vala:142
 #, c-format
 msgid "Regex error: %s"
 msgstr "Chyba regex: %s"
 
-#: src/page-variables.vala:146
+#: src/page-variables.vala:168
 #, c-format
 msgid "Error creating template: %s"
 msgstr "Chyba při vytváření šablony: %s"

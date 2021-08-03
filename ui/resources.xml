@@ -8,5 +8,6 @@
 		<file>page-list-available-templates.glade</file>
 		<file>page-list-template-variables.glade</file>
 		<file>page-list-creating-success.glade</file>
+		<file>preferences-window.glade</file>
 	</gresource>
 </gresources>

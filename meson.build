@@ -1,5 +1,5 @@
 project('valdo-gtk', 'vala', 'c',
-  version: '0.0.2',
+  version: '0.0.3',
   license: 'GPL-3.0-or-later')
 
 templates_dir = get_option('prefix') / get_option('datadir') / 'valdo-gtk' / 'templates'
@@ -71,7 +71,7 @@ executable('valdo-gtk',
            [src, valdo_files, resources],
            dependencies: deps,
            vala_args: [resource_args],
-		   gui_app: true,
-		   install: true)
+           gui_app: true,
+           install: true)
 
 meson.add_install_script('build-aux/meson/postinstall.py')

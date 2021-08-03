@@ -31,6 +31,15 @@
 	</screenshots>
 
 	<releases>
+		<release version="0.0.3" date="2021-08-03">
+			<description>
+				<ul>
+					<li>Support for substitutions in variables</li>
+					<li>Opening projects using a user-defined command by left-click</li>
+					<li>Removing projects from the list by right-clicking</li>
+				</ul>
+			</description>
+		</release>
 		<release version="0.0.2" date="2021-07-30">
 			<description>
 				<ul>

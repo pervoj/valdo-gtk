@@ -7,7 +7,7 @@ class ValdoGTK.VariablesPage : Gtk.ScrolledWindow {
 	private Gtk.Stack parent_stack;
 	private ProjectsPage projects_page;
 
-	private Settings settings = new Settings ("cz.pervoj.valdo-gtk");
+	private Settings settings_projects = new Settings ("cz.pervoj.valdo-gtk.projects");
 
 	public HashTable<string, string> substitutions = new HashTable<string, string> (str_hash, str_equal);
 
@@ -198,21 +198,19 @@ class ValdoGTK.VariablesPage : Gtk.ScrolledWindow {
 
 	private void add_project_to_schema (string name, string path) { // Add project list to GSettings
 		var projects = new HashTable<string, string> (GLib.str_hash, GLib.str_equal);
-		projects[name] = path;
-		var projects_variant = settings.get_value ("latest-projects");
+		projects[path] = name;
+		var projects_variant = settings_projects.get_value ("latest-projects");
 		var projects_iter = new VariantIter (projects_variant);
 		string? project_name = null;
 		string? project_path = null;
 		while (projects_iter.next ("(ss)", out project_name, out project_path)) {
-			projects[project_name] = project_path;
+			projects[project_path] = project_name;
 		}
 		
 		VariantBuilder vb = new VariantBuilder (new VariantType ("a(ss)"));
-
-		foreach (unowned var one_project_name in projects.get_keys_as_array ()) {
-			vb.add ("(ss)", one_project_name, projects[one_project_name]);
+		foreach (unowned var one_project_path in projects.get_keys_as_array ()) {
+			vb.add ("(ss)", projects[one_project_path], one_project_path);
 		}
-
-		settings.set_value ("latest-projects", vb.end ());
+		settings_projects.set_value ("latest-projects", vb.end ());
 	}
 }

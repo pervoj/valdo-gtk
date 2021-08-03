@@ -8,14 +8,12 @@ class ValdoGTK.MainWindow : Gtk.ApplicationWindow {
 	[GtkChild] private unowned Gtk.ModelButton quit_button;
 
 	public MainWindow (ValdoGTK.App app) {
-		Object (
-			application: app
-		);
+		Object (application: app);
 
 		about_button.clicked.connect (app.show_about_dialog);
 		quit_button.clicked.connect (app.quit);
 
-		var projects_page = new ProjectsPage ();
+		var projects_page = new ProjectsPage (this);
 		var variables_page = new VariablesPage (this, pages_stack, projects_page);
 		var templates_page = new TemplatesPage (this, pages_stack, variables_page);
 		var success_page = new SuccessPage ();
@@ -26,6 +24,12 @@ class ValdoGTK.MainWindow : Gtk.ApplicationWindow {
 		pages_stack.add_named (success_page, "creating-success");
 		pages_stack.set_visible_child_name ("latest-projects");
 		pages_stack.set_transition_type (Gtk.StackTransitionType.SLIDE_LEFT_RIGHT);
+	}
+
+	[GtkCallback]
+	private void open_preferences () {
+		var preferences = new PreferencesWindow (this);
+		preferences.show_all ();
 	}
 
 	[GtkCallback]
