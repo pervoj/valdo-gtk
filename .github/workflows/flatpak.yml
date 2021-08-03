@@ -1,15 +1,19 @@
-on: [push, pull_request]
+on:
+  push:
+    branches: [main]
+  pull_request:
 name: Flatpak
 jobs:
-  flatpak-builder:
-    name: Flatpak Builder
+  flatpak:
+    name: "Flatpak"
     runs-on: ubuntu-latest
+    container:
+      image: bilelmoussaoui/flatpak-github-actions:gnome-40
+      options: --privileged
     steps:
-    - uses: actions/checkout@master
-    - uses: nahuelwexd/flatpak-builder-action@gnome-3-36
+    - uses: actions/checkout@v2
+    - uses: bilelmoussaoui/flatpak-github-actions/flatpak-builder@v3
       with:
+        bundle: valdo-gtk.flatpak
         manifest-path: cz.pervoj.valdo-gtk.json
-        meson-args: -Dprofile=development
-        flatpak-module: testproject
-        app-id: cz.pervoj.valdo-gtk
-        bundle: cz.pervoj.valdo-gtk.flatpak
+        cache-key: flatpak-builder-${{ github.sha }}
