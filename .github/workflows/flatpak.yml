@@ -1,22 +1,22 @@
 on:
-	push:
-		branches:
-			- master
-	pull_request:
+  push:
+    branches:
+      - master
+  pull_request:
 
 name: Flatpak
 
 jobs:
-	build:
-		name: Build the app
-		runs-on: ubuntu-latest
-		container:
-			image: pervoj/valdo-gtk-ci-image:latest
-			options: --privileged
-		steps:
-			- name: Checkout
-			  uses: actions/checkout@v2
-			  with:
+  build:
+    name: Build the app
+    runs-on: ubuntu-latest
+    container:
+      image: pervoj/valdo-gtk-ci-image:latest
+      options: --privileged
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
           submodules: recursive
 
       - name: Cache dependencies
@@ -40,9 +40,9 @@ jobs:
   package:
     name: Create Flatpak bundle
     runs-on: ubuntu-latest
-		container:
-			image: pervoj/valdo-gtk-ci-image:latest
-			options: --privileged
+    container:
+      image: pervoj/valdo-gtk-ci-image:latest
+      options: --privileged
     needs: build
     steps:
       - name: Download Flatpak repository
