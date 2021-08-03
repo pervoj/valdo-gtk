@@ -1,60 +1,15 @@
-on:
-  push:
-    branches:
-      - master
-  pull_request:
-
+on: [push, pull_request]
 name: Flatpak
-
 jobs:
-  build:
-    name: Build the app
+  flatpak-builder:
+    name: Flatpak Builder
     runs-on: ubuntu-latest
-    container:
-      image: pervoj/valdo-gtk-ci-image:latest
-      options: --privileged
     steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-        with:
-          submodules: recursive
-
-      - name: Cache dependencies
-        uses: actions/cache@v2
-        with:
-          path: .flatpak-builder
-          key: ${{ runner.os }}-flatpak-${{ hashFiles('**/cz.pervoj.valdo-gtk.json') }}
-          restore-keys: |
-            ${{ runner.os }}-flatpak-
-
-      - name: Build
-        run: |
-          flatpak-builder --repo=repo --install-deps-from=flathub flatpak_app cz.pervoj.valdo-gtk.json
-
-      - name: Upload Flatpak repository
-        uses: actions/upload-artifact@v2
-        with:
-          name: Flatpak Repository
-          path: repo
-
-  package:
-    name: Create Flatpak bundle
-    runs-on: ubuntu-latest
-    container:
-      image: pervoj/valdo-gtk-ci-image:latest
-      options: --privileged
-    needs: build
-    steps:
-      - name: Download Flatpak repository
-        uses: actions/download-artifact@v2
-
-      - name: Create Flatpak bundle
-        run: |
-          flatpak build-bundle repo cz.pervoj.valdo-gtk.flatpak cz.pervoj.valdo-gtk
-          flatpak build-bundle --runtime repo cz.pervoj.valdo-gtk.Locale.flatpak cz.pervoj.valdo-gtk.Locale
-
-      - name: Upload bundle
-        uses: actions/upload-artifact@v2.2.4
-        with:
-          name: Flatpak Bundles
-          path: '*.flatpak'
+    - uses: actions/checkout@master
+    - uses: nahuelwexd/flatpak-builder-action@gnome-40
+      with:
+        manifest-path: cz.pervoj.valdo-gtk.json
+        meson-args: -Dprofile=development
+        flatpak-module: testproject
+        app-id: cz.pervoj.valdo-gtk
+        bundle: cz.pervoj.valdo-gtk.flatpak
