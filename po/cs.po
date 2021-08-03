@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: valdo-gtk\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-08-03 10:46+0200\n"
-"PO-Revision-Date: 2021-08-03 10:46+0200\n"
+"POT-Creation-Date: 2021-08-03 17:29+0200\n"
+"PO-Revision-Date: 2021-08-03 17:29+0200\n"
 "Last-Translator: Vojtěch Perník <translations@pervoj.cz>\n"
 "Language-Team: Czech <gnome-cs-list@gnome.org>\n"
 "Language: cs\n"
@@ -21,16 +21,21 @@ msgstr ""
 #. Translators: Application name
 #: data/cz.pervoj.valdo-gtk.desktop.in:3
 #: data/cz.pervoj.valdo-gtk.metainfo.xml.in:7 ui/main-window.glade:74
-#: src/app.vala:9 src/app.vala:37
+#: src/app.vala:9 src/app.vala:41
 msgid "Valdo GTK"
 msgstr "Valdo GTK"
 
 #. Translators: Application description
 #: data/cz.pervoj.valdo-gtk.desktop.in:4
 #: data/cz.pervoj.valdo-gtk.metainfo.xml.in:8 ui/main-window.glade:75
-#: src/app.vala:38
+#: src/app.vala:42
 msgid "Create new Vala projects from templates"
 msgstr "Vytvářejte nové projekty ve Vale z šablon"
+
+#. Translators: These are the keywords used by the search trackers on DEs, MUST be delimited by semicolons and MUST have a trailing one
+#: data/cz.pervoj.valdo-gtk.desktop.in:12
+msgid "valdo;vala;project;"
+msgstr "valdo;vala;projekt;"
 
 #: data/cz.pervoj.valdo-gtk.metainfo.xml.in:11
 msgid "Princeton Ferro, Vojtěch Perník"
@@ -86,6 +91,10 @@ msgstr "Ukončit"
 msgid "Latest projects:"
 msgstr "Poslední projekty:"
 
+#: ui/no-projects.glade:43
+msgid "You haven't created any projects yet."
+msgstr "Zatím jste nevytvořili žádný projekt."
+
 #. Translators: Title of the available templates list
 #: ui/page-list-available-templates.glade:40
 msgid "Available templates:"
@@ -96,7 +105,7 @@ msgid "Template variables:"
 msgstr "Proměnné šablony:"
 
 #. Translators: Success page title
-#: ui/page-list-creating-success.glade:37
+#: ui/page-creating-success.glade:37
 msgid "Project successfully created"
 msgstr "Projekt byl úsěšně vytvořen"
 
@@ -125,25 +134,25 @@ msgstr "Otevírání projektů"
 msgid "Valdo GTK Preferences"
 msgstr "Předvolby Valdo GTK"
 
-#: src/app.vala:39
+#: src/app.vala:43
 msgid "Copyright © 2021 Vojtěch Perník"
 msgstr "Copyright © 2021 Vojtěch Perník"
 
 #. Translators: Here write your names, or leave it empty. Each name on new line. You can also add email (John Doe <j.doe@example.com>). Do not translate literally!
-#: src/app.vala:45
+#: src/app.vala:49
 msgid "translator-credits"
 msgstr "translator-credits"
 
-#: src/app.vala:47
+#: src/app.vala:51
 msgid "GitHub repository"
 msgstr "Repozitář na GitHubu"
 
-#: src/page-projects.vala:66
+#: src/page-projects.vala:77
 #, c-format
 msgid "Error opening project: %s"
 msgstr "Chyba při otevírání projektu: %s"
 
-#: src/page-projects.vala:73
+#: src/page-projects.vala:84
 #, c-format
 msgid "Do you really want to remove project %s?"
 msgstr "Opravdu chcete odebrat projekt %s?"

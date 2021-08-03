@@ -3,9 +3,10 @@ data/cz.pervoj.valdo-gtk.metainfo.xml.in
 
 ui/main-window.glade
 ui/page-list-latest-projects.glade
+ui/no-projects.glade
 ui/page-list-available-templates.glade
 ui/page-list-template-variables.glade
-ui/page-list-creating-success.glade
+ui/page-creating-success.glade
 ui/list-item.glade
 ui/form-list-item.glade
 ui/preferences-window.glade
@@ -15,6 +16,5 @@ src/main-window.vala
 src/page-projects.vala
 src/page-templates.vala
 src/page-variables.vala
-src/page-success.vala
 src/list-item.vala
 src/form-list-item.vala
