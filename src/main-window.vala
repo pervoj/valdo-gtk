@@ -16,7 +16,7 @@ class ValdoGTK.MainWindow : Gtk.ApplicationWindow {
 		var projects_page = new ProjectsPage (this);
 		var variables_page = new VariablesPage (this, pages_stack, projects_page);
 		var templates_page = new TemplatesPage (this, pages_stack, variables_page);
-		var success_page = new SuccessPage ();
+		var success_page = new Gtk.Builder.from_resource ("/cz/pervoj/valdo-gtk/page-creating-success.glade").get_object ("creating-success") as Gtk.Box;
 
 		pages_stack.add_named (projects_page, "latest-projects");
 		pages_stack.add_named (templates_page, "available-templates");

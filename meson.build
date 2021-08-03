@@ -1,12 +1,24 @@
 project('valdo-gtk', 'vala', 'c',
   version: '0.0.3',
-  license: 'GPL-3.0-or-later')
+  license: 'GPL-3.0-or-later'
+)
+application_id  = 'cz.pervoj.valdo-gtk'
 
 templates_dir = get_option('prefix') / get_option('datadir') / 'valdo-gtk' / 'templates'
 
 add_project_arguments ('-DGETTEXT_PACKAGE=@0@'.format(meson.project_name ()),
 	language: 'c'
 )
+
+# Check the profile for this build
+if get_option ('profile') == 'development'
+	profile = '.Devel'
+	add_project_arguments ('-D', 'DEVEL',
+		language: 'vala'
+	)
+else
+	profile = ''
+endif
 
 add_project_arguments([
         '--vapidir', join_paths(meson.current_source_dir(), 'vapi'),
@@ -17,6 +29,8 @@ add_project_arguments([
 
 set_defines = [
 	['TEMPLATES', templates_dir],
+  ['APPLICATION_ID', application_id],
+  ['ICON_NAME', '@0@@1@'.format(application_id, profile)],
 	['VERSION', meson.project_version()],
 	['LOCALEDIR', join_paths(get_option('prefix'), get_option('localedir'))],
   ['GETTEXT_PACKAGE', meson.project_name()]

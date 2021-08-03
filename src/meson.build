@@ -6,6 +6,5 @@ src = files([
   'page-projects.vala',
   'page-templates.vala',
   'page-variables.vala',
-  'page-success.vala',
   'preferences-window.vala',
 ])

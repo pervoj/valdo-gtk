@@ -7,4 +7,6 @@ Icon=cz.pervoj.valdo-gtk
 Terminal=false
 Type=Application
 Categories=GTK;Development;
+# Translators: These are the keywords used by the search trackers on DEs, MUST be delimited by semicolons and MUST have a trailing one
+Keywords=valdo;vala;project;
 StartupNotify=true

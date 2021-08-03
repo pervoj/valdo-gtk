@@ -21,39 +21,50 @@ class ValdoGTK.ProjectsPage : Gtk.ScrolledWindow {
 	}
 
 	public void update_list () { // Load project list from GSettings
-		var latest_project_list = new Gtk.ListBox ();
-
+		var projects = new HashTable<string, string> (GLib.str_hash, GLib.str_equal);	
 		var projects_variant = settings_projects.get_value ("latest-projects");
 		var projects_iter = new VariantIter (projects_variant);
-
 		string? project_name = null;
 		string? project_path = null;
-
 		while (projects_iter.next ("(ss)", out project_name, out project_path)) {
-			var row = new Gtk.ListBoxRow ();
-			var eventbox = new Gtk.EventBox ();
-			eventbox.add (new ListItem (project_name, project_path));
-			row.add (eventbox);
-
-			// Not working if use directly project_path
-			var project_name_new = project_name;
-			var project_path_new = project_path;
-			row.activate.connect (() => { open_project (project_path_new); });
-
-			row.button_release_event.connect ((event) => {
-				if (event.button == 1) { row.activate (); }
-				else if (event.button == 3) { remove_project (project_name_new, project_path_new); }
-				return false;
-			});
-
-			latest_project_list.add (row);
+			projects[project_path] = project_name;
 		}
 
 		if (list_parent.get_child () != null) {
 			list_parent.get_child ().destroy ();
 		}
-		list_parent.add (latest_project_list);
-		latest_project_list.show_all ();
+
+		if (projects.length > 0) {
+			var latest_project_list = new Gtk.ListBox ();
+
+			foreach (unowned var one_project_path in projects.get_keys_as_array ()) {
+				var row = new Gtk.ListBoxRow ();
+				var eventbox = new Gtk.EventBox ();
+				eventbox.add (new ListItem (projects[one_project_path], one_project_path));
+				row.add (eventbox);
+
+				row.activate.connect (() => { open_project (one_project_path); });
+
+				row.button_release_event.connect ((event) => {
+					if (event.button == 1) { row.activate (); }
+					else if (event.button == 3) { remove_project (projects[one_project_path], one_project_path); }
+					return false;
+				});
+
+				latest_project_list.add (row);
+			}
+
+			list_parent.add (latest_project_list);
+			latest_project_list.show_all ();
+		} else {
+			var builder = new Gtk.Builder.from_resource ("/cz/pervoj/valdo-gtk/no-projects.glade");
+			var image = builder.get_object ("icon") as Gtk.Image;
+			assert (image != null);
+			image.icon_name = Config.ICON_NAME;
+			var box = builder.get_object ("no-projects") as Gtk.Box;
+			assert (box != null);
+			list_parent.add (box);
+		}
 	}
 
 	private void open_project (string project_path) {

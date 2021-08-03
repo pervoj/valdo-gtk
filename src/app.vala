@@ -1,12 +1,16 @@
 class ValdoGTK.App : Gtk.Application {
 	public App () {
-		Object (application_id: "cz.pervoj.valdo-gtk",
+		Object (application_id: Config.APPLICATION_ID,
 				flags: ApplicationFlags.FLAGS_NONE);
 	}
 
 	public override void startup () {
 		base.startup ();
 		Environment.set_application_name (_("Valdo GTK"));
+
+		Gtk.Settings? gtk_settings = Gtk.Settings.get_default ();
+		assert (gtk_settings != null);
+		gtk_settings.gtk_application_prefer_dark_theme = true;
 
 
 		// Set keyboard shortcuts
@@ -38,7 +42,7 @@ class ValdoGTK.App : Gtk.Application {
 			comments = _("Create new Vala projects from templates"),
 			copyright = _("Copyright \xc2\xa9 2021 Vojtěch Perník"),
 			version = Config.VERSION,
-			logo_icon_name = "cz.pervoj.valdo-gtk",
+			logo_icon_name = Config.ICON_NAME,
 			license_type = Gtk.License.GPL_3_0,
 			authors = { "Vojtěch Perník <develop@pervoj.cz>" },
 			// Translators: Here write your names, or leave it empty. Each name on new line. You can also add email (John Doe <j.doe@example.com>). Do not translate literally!
