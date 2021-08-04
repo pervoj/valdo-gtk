@@ -1,0 +1,214 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-08-04 13:20+0200\n"
+"PO-Revision-Date: 2021-08-04 13:44+0200\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.4.3\n"
+"Last-Translator: Óscar Fernández Díaz <oscfdezdz@tuta.io>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: es\n"
+
+#. Translators: Application name
+#: data/cz.pervoj.valdo-gtk.desktop.in:3
+#: data/cz.pervoj.valdo-gtk.metainfo.xml.in:7 ui/main-window.glade:74
+#: src/app.vala:9 src/app.vala:41
+msgid "Valdo GTK"
+msgstr "Valdo GTK"
+
+#. Translators: Application description
+#: data/cz.pervoj.valdo-gtk.desktop.in:4
+#: data/cz.pervoj.valdo-gtk.metainfo.xml.in:8 ui/main-window.glade:75
+#: src/app.vala:42
+msgid "Create new Vala projects from templates"
+msgstr "Crear proyectos nuevos Vala a partir de plantillas"
+
+#: data/cz.pervoj.valdo-gtk.desktop.in:12
+msgid "valdo;vala;project;"
+msgstr "valdo;vala;project;proyecto;"
+
+#: data/cz.pervoj.valdo-gtk.metainfo.xml.in:11
+msgid "Princeton Ferro, Vojtěch Perník"
+msgstr "Princeton Ferro, Vojtěch Perník"
+
+#: data/cz.pervoj.valdo-gtk.metainfo.xml.in:14
+msgid "GTK frontend for Valdo"
+msgstr "Interfaz GTK para Valdo"
+
+#: data/cz.pervoj.valdo-gtk.metainfo.xml.in:37
+msgid "Support for substitutions in variables"
+msgstr "Compatibilidad con las sustituciones en las variables"
+
+#: data/cz.pervoj.valdo-gtk.metainfo.xml.in:38
+msgid "Opening projects using a user-defined command by left-click"
+msgstr "Apertura de proyectos mediante un comando definido por el usuario con un clic izquierdo"
+
+#: data/cz.pervoj.valdo-gtk.metainfo.xml.in:39
+msgid "Removing projects from the list by right-clicking"
+msgstr "Eliminar proyectos de la lista haciendo clic con el botón derecho del ratón"
+
+#: data/cz.pervoj.valdo-gtk.metainfo.xml.in:46
+msgid "New template variables (AUTHOR, USERNAME and USERADDR)"
+msgstr "Variables de plantilla nuevas (AUTHOR, USERNAME y USERADDR)"
+
+#: data/cz.pervoj.valdo-gtk.metainfo.xml.in:47
+msgid "New template (elementary OS App)"
+msgstr "Plantilla nueva (aplicación elemental del SO)"
+
+#: data/cz.pervoj.valdo-gtk.metainfo.xml.in:53
+msgid "First Valdo GTK release"
+msgstr "Primera versión de Valdo GTK"
+
+#. Translators: Preferences button title
+#: ui/main-window.glade:19
+msgid "Preferences"
+msgstr "Preferencias"
+
+#. Translators: About button title
+#: ui/main-window.glade:33
+msgid "About application"
+msgstr "Acerca de la aplicación"
+
+#. Translators: Quit button title
+#: ui/main-window.glade:46
+msgid "Quit"
+msgstr "Salir"
+
+#. Translators: Title of the latest project list
+#: ui/page-list-latest-projects.glade:48
+msgid "Latest projects:"
+msgstr "Últimos proyectos:"
+
+#: ui/no-projects.glade:43
+msgid "You haven't created any projects yet."
+msgstr "No has creado ningún proyecto aún."
+
+#. Translators: Title of the available templates list
+#: ui/page-list-available-templates.glade:40
+msgid "Available templates:"
+msgstr "Plantillas disponibles:"
+
+#: ui/page-list-template-variables.glade:47
+msgid "Template variables:"
+msgstr "Variables de la plantilla:"
+
+#. Translators: Success page title
+#: ui/page-creating-success.glade:37
+msgid "Project successfully created"
+msgstr "Proyecto creado con éxito"
+
+#. Translators: Checkbox label text
+#: ui/preferences-window.glade:58
+msgid "Enable project openning:"
+msgstr "Habilitar la apertura del proyecto:"
+
+#. Translators: Entry label text
+#: ui/preferences-window.glade:72
+msgid "Project openning command:"
+msgstr "Comando de apertura del proyecto:"
+
+#. Translators: Entry placeholder text
+#: ui/preferences-window.glade:87
+msgid "Include {path} for project path"
+msgstr "Incluir {path} para la ruta del proyecto"
+
+#. Translators: Title of preferences category
+#: ui/preferences-window.glade:117
+msgid "Project openning"
+msgstr "Apertura de proyectos"
+
+#. Translators: Preferences window title
+#: ui/preferences-window.glade:140
+msgid "Valdo GTK Preferences"
+msgstr "Preferencias de Valdo GTK"
+
+#: src/app.vala:43
+msgid "Copyright © 2021 Vojtěch Perník"
+msgstr "Copyright © 2021 Vojtěch Perník"
+
+#: src/app.vala:49
+msgid "translator-credits"
+msgstr "Óscar Fernández Díaz <oscfdezdz@tuta.io>"
+
+#: src/app.vala:51
+msgid "GitHub repository"
+msgstr "Repositorio de GitHub"
+
+#: src/page-projects.vala:77
+#, c-format
+msgid "Error opening project: %s"
+msgstr "Error al abrir el proyecto: %s"
+
+#: src/page-projects.vala:84
+#, c-format
+msgid "Do you really want to remove project %s?"
+msgstr "¿Realmente quiere eliminar el proyecto %s?"
+
+#: src/page-templates.vala:50
+#, c-format
+msgid "Error: %s"
+msgstr "Error: %s"
+
+#: src/page-templates.vala:52
+#, c-format
+msgid "Error, could not enumerate templates: %s"
+msgstr "Error, no se han podido enumerar las plantillas: %s"
+
+#: src/page-variables.vala:34
+msgid "Template name:"
+msgstr "Nombre de la plantilla:"
+
+#: src/page-variables.vala:38
+msgid "Project location:"
+msgstr "Ruta del proyecto:"
+
+#: src/page-variables.vala:39
+msgid "Choose project location"
+msgstr "Elija la ruta del proyecto"
+
+#: src/page-variables.vala:55
+#, c-format
+msgid "Enter %s:"
+msgstr "Introduzca %s:"
+
+#: src/page-variables.vala:98
+msgid "Create"
+msgstr "Crear"
+
+#: src/page-variables.vala:116
+msgid "Error: select project location"
+msgstr "Error: seleccione la ruta del proyecto"
+
+#: src/page-variables.vala:126
+#, c-format
+msgid "Error: %s was not specified"
+msgstr "Error: no se ha especificado %s"
+
+#: src/page-variables.vala:135
+#, c-format
+msgid "Error: %s must match the pattern %s"
+msgstr "Error: %s debe coincidir con el patrón %s"
+
+#: src/page-variables.vala:137
+#, c-format
+msgid "Error: %s must be valid email"
+msgstr "Error: %s debe ser un correo electrónico válido"
+
+#: src/page-variables.vala:142
+#, c-format
+msgid "Regex error: %s"
+msgstr "Error regex: %s"
+
+#: src/page-variables.vala:168
+#, c-format
+msgid "Error creating template: %s"
+msgstr "Error al crear la plantilla: %s"
