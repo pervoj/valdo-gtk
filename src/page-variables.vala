@@ -153,7 +153,7 @@ class ValdoGTK.VariablesPage : Gtk.ScrolledWindow {
 					// Create files
 					Valdo.TemplateEngine.apply_template (
 						template,
-						path_button.get_current_folder_file (),
+						File.new_for_uri (path_button.get_uri ()),
 						substitutions["PROJECT_DIR"],
 						substitutions
 					);
