@@ -15,9 +15,9 @@
         {
             "name": "valdo-gtk",
             "buildsystem": "meson",
-                "config-opts": [
-                    "-Dsandbox=true"
-                ],
+            "config-opts": [
+                "-Dsandbox=true"
+            ],
             "sources": [
                 {
                     "type": "dir",
