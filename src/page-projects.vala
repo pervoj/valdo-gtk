@@ -43,7 +43,9 @@ class ValdoGTK.ProjectsPage : Gtk.ScrolledWindow {
 				eventbox.add (new ListItem (projects[one_project_path], one_project_path));
 				row.add (eventbox);
 
-				row.activate.connect (() => { open_project (one_project_path); });
+				if (Config.SANDBOX == "false") {
+					row.activate.connect (() => { open_project (one_project_path); });
+				}
 
 				row.button_release_event.connect ((event) => {
 					if (event.button == 1) { row.activate (); }

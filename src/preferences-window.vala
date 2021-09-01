@@ -2,6 +2,8 @@
 class ValdoGTK.PreferencesWindow : Gtk.Window {
     private Settings settings_preferences = new Settings ("cz.pervoj.valdo-gtk.preferences");
 
+	[GtkChild] private unowned Gtk.Frame opening_frame;
+
 	[GtkChild] private unowned Gtk.Switch opening_enable_switch;
 
 	[GtkChild] private unowned Gtk.Label opening_command_label;
@@ -9,6 +11,11 @@ class ValdoGTK.PreferencesWindow : Gtk.Window {
 
 	public PreferencesWindow (Gtk.Window parent) {
         Object (transient_for: parent);
+
+		if (Config.SANDBOX == "true") {
+			opening_frame.set_sensitive (false);
+			opening_frame.set_tooltip_text (_("This feature is not available when running from the sandbox."));
+		}
 
 		bool opening_enable = settings_preferences.get_boolean ("opening-enable");
         string opening_command = settings_preferences.get_string ("opening-command");

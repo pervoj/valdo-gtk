@@ -4,6 +4,7 @@ namespace ValdoGTK.Config {
 	const string APPLICATION_ID;
 	const string ICON_NAME;
 	const string VERSION;
+	const string SANDBOX;
 	const string LOCALEDIR;
 	const string GETTEXT_PACKAGE;
 }

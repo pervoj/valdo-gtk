@@ -11,9 +11,9 @@ add_project_arguments ('-DGETTEXT_PACKAGE=@0@'.format(meson.project_name ()),
 )
 
 # Check the profile for this build
-if get_option ('profile') == 'development'
+if get_option('profile') == 'development'
   profile = '.Devel'
-  add_project_arguments ('-D', 'DEVEL',
+  add_project_arguments('-D', 'DEVEL',
     language: 'vala'
   )
 else
@@ -32,6 +32,7 @@ set_defines = [
   ['APPLICATION_ID', application_id],
   ['ICON_NAME', '@0@@1@'.format(application_id, profile)],
   ['VERSION', meson.project_version()],
+  ['SANDBOX', get_option('sandbox')],
   ['LOCALEDIR', join_paths(get_option('prefix'), get_option('localedir'))],
   ['GETTEXT_PACKAGE', meson.project_name()]
 ]

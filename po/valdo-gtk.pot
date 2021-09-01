@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: valdo-gtk\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-09-01 18:34+0200\n"
+"POT-Creation-Date: 2021-09-01 19:25+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -156,12 +156,12 @@ msgstr ""
 msgid "GitHub repository"
 msgstr ""
 
-#: src/page-projects.vala:77
+#: src/page-projects.vala:79
 #, c-format
 msgid "Error opening project: %s"
 msgstr ""
 
-#: src/page-projects.vala:84
+#: src/page-projects.vala:86
 #, c-format
 msgid "Do you really want to remove project %s?"
 msgstr ""
@@ -226,4 +226,8 @@ msgstr ""
 #: src/page-variables.vala:168
 #, c-format
 msgid "Error creating template: %s"
+msgstr ""
+
+#: src/preferences-window.vala:17
+msgid "This feature is not available when running from the sandbox."
 msgstr ""

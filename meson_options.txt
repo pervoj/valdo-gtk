@@ -1,6 +1,13 @@
 option ('profile',
-	       type: 'combo',
-	      value: 'default',
-	    choices: ['default', 'development'],
-	description: 'The build profile for the app. If none specified, "default" is used'
+  type: 'combo',
+  value: 'default',
+  choices: ['default', 'development'],
+  description: 'The build profile for the app. If none specified, "default" is used.'
+)
+
+option ('sandbox',
+  type: 'combo',
+  value: 'false',
+  choices: ['false', 'true'],
+  description: 'Is the app running in the sandbox? If none specified, flase is used.'
 )

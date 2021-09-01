@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-09-01 18:34+0200\n"
+"POT-Creation-Date: 2021-09-01 19:25+0200\n"
 "PO-Revision-Date: 2021-08-04 13:44+0200\n"
 "Last-Translator: Óscar Fernández Díaz <oscfdezdz@tuta.io>\n"
 "Language-Team: \n"
@@ -161,12 +161,12 @@ msgstr "Óscar Fernández Díaz <oscfdezdz@tuta.io>"
 msgid "GitHub repository"
 msgstr "Repositorio de GitHub"
 
-#: src/page-projects.vala:77
+#: src/page-projects.vala:79
 #, c-format
 msgid "Error opening project: %s"
 msgstr "Error al abrir el proyecto: %s"
 
-#: src/page-projects.vala:84
+#: src/page-projects.vala:86
 #, c-format
 msgid "Do you really want to remove project %s?"
 msgstr "¿Realmente quiere eliminar el proyecto %s?"
@@ -232,3 +232,7 @@ msgstr "Error regex: %s"
 #, c-format
 msgid "Error creating template: %s"
 msgstr "Error al crear la plantilla: %s"
+
+#: src/preferences-window.vala:17
+msgid "This feature is not available when running from the sandbox."
+msgstr ""

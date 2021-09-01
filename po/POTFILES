@@ -18,3 +18,4 @@ src/page-templates.vala
 src/page-variables.vala
 src/list-item.vala
 src/form-list-item.vala
+src/preferences-window.vala

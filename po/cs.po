@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: valdo-gtk\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-09-01 18:34+0200\n"
-"PO-Revision-Date: 2021-09-01 18:35+0200\n"
+"POT-Creation-Date: 2021-09-01 19:25+0200\n"
+"PO-Revision-Date: 2021-09-01 19:25+0200\n"
 "Last-Translator: Vojtěch Perník <translations@pervoj.cz>\n"
 "Language-Team: Czech <gnome-cs-list@gnome.org>\n"
 "Language: cs\n"
@@ -159,12 +159,12 @@ msgstr "translator-credits"
 msgid "GitHub repository"
 msgstr "Repozitář na GitHubu"
 
-#: src/page-projects.vala:77
+#: src/page-projects.vala:79
 #, c-format
 msgid "Error opening project: %s"
 msgstr "Chyba při otevírání projektu: %s"
 
-#: src/page-projects.vala:84
+#: src/page-projects.vala:86
 #, c-format
 msgid "Do you really want to remove project %s?"
 msgstr "Opravdu chcete odebrat projekt %s?"
@@ -230,3 +230,7 @@ msgstr "Chyba regex: %s"
 #, c-format
 msgid "Error creating template: %s"
 msgstr "Chyba při vytváření šablony: %s"
+
+#: src/preferences-window.vala:17
+msgid "This feature is not available when running from the sandbox."
+msgstr "Tato funkce není při spouštění ze sandboxu dostupná."
