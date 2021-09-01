@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
+# This file is distributed under the same license as the valdo-gtk package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: valdo-gtk\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-08-03 17:29+0200\n"
+"POT-Creation-Date: 2021-09-01 18:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -45,26 +45,38 @@ msgid "GTK frontend for Valdo"
 msgstr ""
 
 #: data/cz.pervoj.valdo-gtk.metainfo.xml.in:37
-msgid "Support for substitutions in variables"
+msgid "Based on Valdo 2021.08.31"
 msgstr ""
 
 #: data/cz.pervoj.valdo-gtk.metainfo.xml.in:38
-msgid "Opening projects using a user-defined command by left-click"
+msgid "Updated elementary OS template"
 msgstr ""
 
 #: data/cz.pervoj.valdo-gtk.metainfo.xml.in:39
-msgid "Removing projects from the list by right-clicking"
+msgid "New icon (following the GNOME guidelines)"
 msgstr ""
 
 #: data/cz.pervoj.valdo-gtk.metainfo.xml.in:46
-msgid "New template variables (AUTHOR, USERNAME and USERADDR)"
+msgid "Support for substitutions in variables"
 msgstr ""
 
 #: data/cz.pervoj.valdo-gtk.metainfo.xml.in:47
+msgid "Opening projects using a user-defined command by left-click"
+msgstr ""
+
+#: data/cz.pervoj.valdo-gtk.metainfo.xml.in:48
+msgid "Removing projects from the list by right-clicking"
+msgstr ""
+
+#: data/cz.pervoj.valdo-gtk.metainfo.xml.in:55
+msgid "New template variables (AUTHOR, USERNAME and USERADDR)"
+msgstr ""
+
+#: data/cz.pervoj.valdo-gtk.metainfo.xml.in:56
 msgid "New template (elementary OS App)"
 msgstr ""
 
-#: data/cz.pervoj.valdo-gtk.metainfo.xml.in:53
+#: data/cz.pervoj.valdo-gtk.metainfo.xml.in:62
 msgid "First Valdo GTK release"
 msgstr ""
 
@@ -168,6 +180,7 @@ msgstr ""
 msgid "Template name:"
 msgstr ""
 
+#. Add project location chooser to list
 #: src/page-variables.vala:38
 msgid "Project location:"
 msgstr ""
@@ -181,6 +194,7 @@ msgstr ""
 msgid "Enter %s:"
 msgstr ""
 
+#. Add OK button to list
 #: src/page-variables.vala:98
 msgid "Create"
 msgstr ""

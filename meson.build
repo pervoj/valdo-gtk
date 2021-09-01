@@ -1,5 +1,5 @@
 project('valdo-gtk', 'vala', 'c',
-  version: '0.0.3',
+  version: '0.1.0',
   license: 'GPL-3.0-or-later'
 )
 application_id  = 'cz.pervoj.valdo-gtk'
@@ -7,45 +7,45 @@ application_id  = 'cz.pervoj.valdo-gtk'
 templates_dir = get_option('prefix') / get_option('datadir') / 'valdo-gtk' / 'templates'
 
 add_project_arguments ('-DGETTEXT_PACKAGE=@0@'.format(meson.project_name ()),
-	language: 'c'
+  language: 'c'
 )
 
 # Check the profile for this build
 if get_option ('profile') == 'development'
-	profile = '.Devel'
-	add_project_arguments ('-D', 'DEVEL',
-		language: 'vala'
-	)
+  profile = '.Devel'
+  add_project_arguments ('-D', 'DEVEL',
+    language: 'vala'
+  )
 else
-	profile = ''
+  profile = ''
 endif
 
 add_project_arguments([
-        '--vapidir', join_paths(meson.current_source_dir(), 'vapi'),
-        '--pkg', 'config',
-    ],
-    language: 'vala',
+    '--vapidir', join_paths(meson.current_source_dir(), 'vapi'),
+    '--pkg', 'config',
+  ],
+  language: 'vala',
 )
 
 set_defines = [
-	['TEMPLATES', templates_dir],
+  ['TEMPLATES', templates_dir],
   ['APPLICATION_ID', application_id],
   ['ICON_NAME', '@0@@1@'.format(application_id, profile)],
-	['VERSION', meson.project_version()],
-	['LOCALEDIR', join_paths(get_option('prefix'), get_option('localedir'))],
+  ['VERSION', meson.project_version()],
+  ['LOCALEDIR', join_paths(get_option('prefix'), get_option('localedir'))],
   ['GETTEXT_PACKAGE', meson.project_name()]
 ]
 config_h = configuration_data()
 foreach define: set_defines
-    config_h.set_quoted(define[0], define[1])
+  config_h.set_quoted(define[0], define[1])
 endforeach
 config_file = configure_file(
-    output: 'config.h',
-    configuration: config_h
+  output: 'config.h',
+  configuration: config_h
 )
 project_config_dep = declare_dependency(
-    sources: config_file,
-    include_directories: include_directories('.')
+  sources: config_file,
+  include_directories: include_directories('.')
 )
 
 deps = [

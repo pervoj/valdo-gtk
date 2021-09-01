@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: valdo-gtk\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-08-03 17:29+0200\n"
-"PO-Revision-Date: 2021-08-03 17:29+0200\n"
+"POT-Creation-Date: 2021-09-01 18:34+0200\n"
+"PO-Revision-Date: 2021-09-01 18:35+0200\n"
 "Last-Translator: Vojtěch Perník <translations@pervoj.cz>\n"
 "Language-Team: Czech <gnome-cs-list@gnome.org>\n"
 "Language: cs\n"
@@ -46,28 +46,40 @@ msgid "GTK frontend for Valdo"
 msgstr "GTK frontend pro Valdo"
 
 #: data/cz.pervoj.valdo-gtk.metainfo.xml.in:37
+msgid "Based on Valdo 2021.08.31"
+msgstr "Postaveno na Valdo 2021.08.31"
+
+#: data/cz.pervoj.valdo-gtk.metainfo.xml.in:38
+msgid "Updated elementary OS template"
+msgstr "Aktualizována šablona elementary OS"
+
+#: data/cz.pervoj.valdo-gtk.metainfo.xml.in:39
+msgid "New icon (following the GNOME guidelines)"
+msgstr "Nová ikona (podle pokynů GNOME)"
+
+#: data/cz.pervoj.valdo-gtk.metainfo.xml.in:46
 msgid "Support for substitutions in variables"
 msgstr "Podpora substitucí v proměnných"
 
-#: data/cz.pervoj.valdo-gtk.metainfo.xml.in:38
+#: data/cz.pervoj.valdo-gtk.metainfo.xml.in:47
 msgid "Opening projects using a user-defined command by left-click"
 msgstr ""
 "Otevření projektů pomocí uživatelsky definovaného příkazu kliknutím levým "
 "tlačítkem"
 
-#: data/cz.pervoj.valdo-gtk.metainfo.xml.in:39
+#: data/cz.pervoj.valdo-gtk.metainfo.xml.in:48
 msgid "Removing projects from the list by right-clicking"
 msgstr "Odebírání projektů ze seznamu kliknutím pravým tlačítkem"
 
-#: data/cz.pervoj.valdo-gtk.metainfo.xml.in:46
+#: data/cz.pervoj.valdo-gtk.metainfo.xml.in:55
 msgid "New template variables (AUTHOR, USERNAME and USERADDR)"
 msgstr "Nové proměnné šablony (AUTHOR, USERNAME a USERADDR)"
 
-#: data/cz.pervoj.valdo-gtk.metainfo.xml.in:47
+#: data/cz.pervoj.valdo-gtk.metainfo.xml.in:56
 msgid "New template (elementary OS App)"
 msgstr "Nová šablona (Aplikace elementary OS)"
 
-#: data/cz.pervoj.valdo-gtk.metainfo.xml.in:53
+#: data/cz.pervoj.valdo-gtk.metainfo.xml.in:62
 msgid "First Valdo GTK release"
 msgstr "První verze Valdo GTK"
 
@@ -171,6 +183,7 @@ msgstr "Chyba, nepodařilo se vypsat šablony: %s"
 msgid "Template name:"
 msgstr "Název šablony:"
 
+#. Add project location chooser to list
 #: src/page-variables.vala:38
 msgid "Project location:"
 msgstr "Umístění projektu:"
@@ -184,6 +197,7 @@ msgstr "Vyberte umístění projektu"
 msgid "Enter %s:"
 msgstr "Zadejte %s:"
 
+#. Add OK button to list
 #: src/page-variables.vala:98
 msgid "Create"
 msgstr "Vyvořit"

@@ -21,6 +21,6 @@ Development builds are automatically generated with every change. You can downlo
 
 ```sh
 meson build
-ninja -C build
+meson compile -C build
 build/valdo-gtk
 ```

@@ -31,6 +31,15 @@
 	</screenshots>
 
 	<releases>
+		<release version="0.1.0" date="2021-09-01">
+			<description>
+				<ul>
+					<li>Based on Valdo 2021.08.31</li>
+					<li>Updated elementary OS template</li>
+					<li>New icon (following the GNOME guidelines)</li>
+				</ul>
+			</description>
+		</release>
 		<release version="0.0.3" date="2021-08-03">
 			<description>
 				<ul>

@@ -7,16 +7,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-08-04 13:20+0200\n"
+"POT-Creation-Date: 2021-09-01 18:34+0200\n"
 "PO-Revision-Date: 2021-08-04 13:44+0200\n"
+"Last-Translator: Óscar Fernández Díaz <oscfdezdz@tuta.io>\n"
 "Language-Team: \n"
+"Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 2.4.3\n"
-"Last-Translator: Óscar Fernández Díaz <oscfdezdz@tuta.io>\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"Language: es\n"
 
 #. Translators: Application name
 #: data/cz.pervoj.valdo-gtk.desktop.in:3
@@ -32,6 +32,7 @@ msgstr "Valdo GTK"
 msgid "Create new Vala projects from templates"
 msgstr "Crear proyectos nuevos Vala a partir de plantillas"
 
+#. Translators: These are the keywords used by the search trackers on DEs, MUST be delimited by semicolons and MUST have a trailing one
 #: data/cz.pervoj.valdo-gtk.desktop.in:12
 msgid "valdo;vala;project;"
 msgstr "valdo;vala;project;proyecto;"
@@ -45,26 +46,42 @@ msgid "GTK frontend for Valdo"
 msgstr "Interfaz GTK para Valdo"
 
 #: data/cz.pervoj.valdo-gtk.metainfo.xml.in:37
+msgid "Based on Valdo 2021.08.31"
+msgstr ""
+
+#: data/cz.pervoj.valdo-gtk.metainfo.xml.in:38
+#, fuzzy
+msgid "Updated elementary OS template"
+msgstr "Plantilla nueva (aplicación elemental del SO)"
+
+#: data/cz.pervoj.valdo-gtk.metainfo.xml.in:39
+msgid "New icon (following the GNOME guidelines)"
+msgstr ""
+
+#: data/cz.pervoj.valdo-gtk.metainfo.xml.in:46
 msgid "Support for substitutions in variables"
 msgstr "Compatibilidad con las sustituciones en las variables"
 
-#: data/cz.pervoj.valdo-gtk.metainfo.xml.in:38
+#: data/cz.pervoj.valdo-gtk.metainfo.xml.in:47
 msgid "Opening projects using a user-defined command by left-click"
-msgstr "Apertura de proyectos mediante un comando definido por el usuario con un clic izquierdo"
+msgstr ""
+"Apertura de proyectos mediante un comando definido por el usuario con un "
+"clic izquierdo"
 
-#: data/cz.pervoj.valdo-gtk.metainfo.xml.in:39
+#: data/cz.pervoj.valdo-gtk.metainfo.xml.in:48
 msgid "Removing projects from the list by right-clicking"
-msgstr "Eliminar proyectos de la lista haciendo clic con el botón derecho del ratón"
+msgstr ""
+"Eliminar proyectos de la lista haciendo clic con el botón derecho del ratón"
 
-#: data/cz.pervoj.valdo-gtk.metainfo.xml.in:46
+#: data/cz.pervoj.valdo-gtk.metainfo.xml.in:55
 msgid "New template variables (AUTHOR, USERNAME and USERADDR)"
 msgstr "Variables de plantilla nuevas (AUTHOR, USERNAME y USERADDR)"
 
-#: data/cz.pervoj.valdo-gtk.metainfo.xml.in:47
+#: data/cz.pervoj.valdo-gtk.metainfo.xml.in:56
 msgid "New template (elementary OS App)"
 msgstr "Plantilla nueva (aplicación elemental del SO)"
 
-#: data/cz.pervoj.valdo-gtk.metainfo.xml.in:53
+#: data/cz.pervoj.valdo-gtk.metainfo.xml.in:62
 msgid "First Valdo GTK release"
 msgstr "Primera versión de Valdo GTK"
 
@@ -135,6 +152,7 @@ msgstr "Preferencias de Valdo GTK"
 msgid "Copyright © 2021 Vojtěch Perník"
 msgstr "Copyright © 2021 Vojtěch Perník"
 
+#. Translators: Here write your names, or leave it empty. Each name on new line. You can also add email (John Doe <j.doe@example.com>). Do not translate literally!
 #: src/app.vala:49
 msgid "translator-credits"
 msgstr "Óscar Fernández Díaz <oscfdezdz@tuta.io>"
@@ -167,6 +185,7 @@ msgstr "Error, no se han podido enumerar las plantillas: %s"
 msgid "Template name:"
 msgstr "Nombre de la plantilla:"
 
+#. Add project location chooser to list
 #: src/page-variables.vala:38
 msgid "Project location:"
 msgstr "Ruta del proyecto:"
@@ -180,6 +199,7 @@ msgstr "Elija la ruta del proyecto"
 msgid "Enter %s:"
 msgstr "Introduzca %s:"
 
+#. Add OK button to list
 #: src/page-variables.vala:98
 msgid "Create"
 msgstr "Crear"
