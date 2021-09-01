@@ -8,16 +8,16 @@
         "--share=ipc",
         "--socket=fallback-x11",
         "--socket=wayland",
-		"--filesystem=home",
+        "--filesystem=home",
         "--filesystem=host"
     ],
     "modules": [
         {
             "name": "valdo-gtk",
             "buildsystem": "meson",
-			"config-opts": [
-				"-Dsandbox=true"
-			],
+                "config-opts": [
+                    "-Dsandbox=true"
+                ],
             "sources": [
                 {
                     "type": "dir",
