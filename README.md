@@ -1,7 +1,10 @@
-<p align="center"><img alt="Icon" src="https://raw.githubusercontent.com/pervoj/valdo-gtk/master/data/icons/hicolor/scalable/apps/cz.pervoj.valdo-gtk.svg"></p>
-<h1 align="center">Valdo GTK</h1>
+<img align="left" alt="Icon" src="https://raw.githubusercontent.com/pervoj/valdo-gtk/master/data/icons/hicolor/scalable/apps/cz.pervoj.valdo-gtk.svg" height="170px">
 
-<p align="center">GTK frontend for <a href="https://github.com/Prince781/valdo">Valdo</a></p>
+# Valdo GTK
+
+GTK frontend for [Valdo](https://github.com/Prince781/valdo)
+
+[![Flatpak Workflow Status](https://img.shields.io/github/workflow/status/pervoj/valdo-gtk/Flatpak)](https://github.com/pervoj/valdo-gtk/actions?query=workflow:Flatpak)
 
 <p align="center"><img alt="Screenshot 1" src="https://raw.githubusercontent.com/pervoj/valdo-gtk/master/data/images/screenshot1.png"></p>
 
