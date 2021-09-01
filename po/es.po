@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-09-01 19:25+0200\n"
-"PO-Revision-Date: 2021-08-04 13:44+0200\n"
+"PO-Revision-Date: 2021-09-01 20:18+0200\n"
 "Last-Translator: Óscar Fernández Díaz <oscfdezdz@tuta.io>\n"
 "Language-Team: \n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.4.3\n"
+"X-Generator: Poedit 3.0\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #. Translators: Application name
@@ -30,7 +30,7 @@ msgstr "Valdo GTK"
 #: data/cz.pervoj.valdo-gtk.metainfo.xml.in:8 ui/main-window.glade:75
 #: src/app.vala:42
 msgid "Create new Vala projects from templates"
-msgstr "Crear proyectos nuevos Vala a partir de plantillas"
+msgstr "Crear proyectos Vala nuevos a partir de plantillas"
 
 #. Translators: These are the keywords used by the search trackers on DEs, MUST be delimited by semicolons and MUST have a trailing one
 #: data/cz.pervoj.valdo-gtk.desktop.in:12
@@ -47,16 +47,15 @@ msgstr "Interfaz GTK para Valdo"
 
 #: data/cz.pervoj.valdo-gtk.metainfo.xml.in:37
 msgid "Based on Valdo 2021.08.31"
-msgstr ""
+msgstr "Basado en Valdo 2021.08.31"
 
 #: data/cz.pervoj.valdo-gtk.metainfo.xml.in:38
-#, fuzzy
 msgid "Updated elementary OS template"
-msgstr "Plantilla nueva (aplicación elemental del SO)"
+msgstr "Plantilla de elementary OS actualizada"
 
 #: data/cz.pervoj.valdo-gtk.metainfo.xml.in:39
 msgid "New icon (following the GNOME guidelines)"
-msgstr ""
+msgstr "Nuevo icono (siguiendo las directrices de GNOME)"
 
 #: data/cz.pervoj.valdo-gtk.metainfo.xml.in:46
 msgid "Support for substitutions in variables"
@@ -79,7 +78,7 @@ msgstr "Variables de plantilla nuevas (AUTHOR, USERNAME y USERADDR)"
 
 #: data/cz.pervoj.valdo-gtk.metainfo.xml.in:56
 msgid "New template (elementary OS App)"
-msgstr "Plantilla nueva (aplicación elemental del SO)"
+msgstr "Nueva plantilla (aplicación de elementary OS)"
 
 #: data/cz.pervoj.valdo-gtk.metainfo.xml.in:62
 msgid "First Valdo GTK release"
@@ -107,7 +106,7 @@ msgstr "Últimos proyectos:"
 
 #: ui/no-projects.glade:43
 msgid "You haven't created any projects yet."
-msgstr "No has creado ningún proyecto aún."
+msgstr "No ha creado ningún proyecto aún."
 
 #. Translators: Title of the available templates list
 #: ui/page-list-available-templates.glade:40
@@ -236,3 +235,4 @@ msgstr "Error al crear la plantilla: %s"
 #: src/preferences-window.vala:17
 msgid "This feature is not available when running from the sandbox."
 msgstr ""
+"Esta función no está disponible cuando se ejecuta desde el depósito seguro."
