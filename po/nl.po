@@ -1,0 +1,234 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the valdo-gtk package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: valdo-gtk\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-09-01 19:25+0200\n"
+"PO-Revision-Date: 2021-10-02 14:32+0200\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.0\n"
+"Last-Translator: Heimen Stoffels <vistausss@fastmail.com>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: nl\n"
+
+#. Translators: Application name
+#: data/cz.pervoj.valdo-gtk.desktop.in:3
+#: data/cz.pervoj.valdo-gtk.metainfo.xml.in:7 ui/main-window.glade:74
+#: src/app.vala:9 src/app.vala:41
+msgid "Valdo GTK"
+msgstr "Valdo GTK"
+
+#. Translators: Application description
+#: data/cz.pervoj.valdo-gtk.desktop.in:4
+#: data/cz.pervoj.valdo-gtk.metainfo.xml.in:8 ui/main-window.glade:75
+#: src/app.vala:42
+msgid "Create new Vala projects from templates"
+msgstr "Maak Vala-toepassingen op basis van sjablonen"
+
+#. Translators: These are the keywords used by the search trackers on DEs, MUST be delimited by semicolons and MUST have a trailing one
+#: data/cz.pervoj.valdo-gtk.desktop.in:12
+msgid "valdo;vala;project;"
+msgstr "valdo;vala;project;toepassing;sjabloon;"
+
+#: data/cz.pervoj.valdo-gtk.metainfo.xml.in:11
+msgid "Princeton Ferro, Vojtěch Perník"
+msgstr "Princeton Ferro, Vojtěch Perník"
+
+#: data/cz.pervoj.valdo-gtk.metainfo.xml.in:14
+msgid "GTK frontend for Valdo"
+msgstr "GTK-frontend voor Valdo"
+
+#: data/cz.pervoj.valdo-gtk.metainfo.xml.in:37
+msgid "Based on Valdo 2021.08.31"
+msgstr "Gebaseerd op Valdo 2021.08.31"
+
+#: data/cz.pervoj.valdo-gtk.metainfo.xml.in:38
+msgid "Updated elementary OS template"
+msgstr "[BIJGEWERKT] elementary OS-sjabloon"
+
+#: data/cz.pervoj.valdo-gtk.metainfo.xml.in:39
+msgid "New icon (following the GNOME guidelines)"
+msgstr "[NIEUW] Nieuw pictogram op basis van de GNOME-richtlijnen"
+
+#: data/cz.pervoj.valdo-gtk.metainfo.xml.in:46
+msgid "Support for substitutions in variables"
+msgstr "[VERBETERD] Ondersteuning voor vervangingen in variabelen"
+
+#: data/cz.pervoj.valdo-gtk.metainfo.xml.in:47
+msgid "Opening projects using a user-defined command by left-click"
+msgstr "[NIEUW] Open projecten met een aangepaste opdracht met de linkermuisknop"
+
+#: data/cz.pervoj.valdo-gtk.metainfo.xml.in:48
+msgid "Removing projects from the list by right-clicking"
+msgstr "[NIEUW] Verwijder projecten van de lijst met de rechtermuisknop"
+
+#: data/cz.pervoj.valdo-gtk.metainfo.xml.in:55
+msgid "New template variables (AUTHOR, USERNAME and USERADDR)"
+msgstr "[NIEUW] Nieuwe sjabloonvariabelen (maker, gebruikersnaam en adres)"
+
+#: data/cz.pervoj.valdo-gtk.metainfo.xml.in:56
+msgid "New template (elementary OS App)"
+msgstr "[NIEUW] Nieuw sjabloon (elementary OS-toepassing)"
+
+#: data/cz.pervoj.valdo-gtk.metainfo.xml.in:62
+msgid "First Valdo GTK release"
+msgstr "Eerste Valdo GTK-uitgave"
+
+#. Translators: Preferences button title
+#: ui/main-window.glade:19
+msgid "Preferences"
+msgstr "Voorkeuren"
+
+#. Translators: About button title
+#: ui/main-window.glade:33
+msgid "About application"
+msgstr "Over de toepassing"
+
+#. Translators: Quit button title
+#: ui/main-window.glade:46
+msgid "Quit"
+msgstr "Afsluiten"
+
+#. Translators: Title of the latest project list
+#: ui/page-list-latest-projects.glade:48
+msgid "Latest projects:"
+msgstr "Recente projecten:"
+
+#: ui/no-projects.glade:43
+msgid "You haven't created any projects yet."
+msgstr "Je hebt nog geen projecten."
+
+#. Translators: Title of the available templates list
+#: ui/page-list-available-templates.glade:40
+msgid "Available templates:"
+msgstr "Beschikbare sjablonen:"
+
+#: ui/page-list-template-variables.glade:47
+msgid "Template variables:"
+msgstr "Sjabloonvariabelen:"
+
+#. Translators: Success page title
+#: ui/page-creating-success.glade:37
+msgid "Project successfully created"
+msgstr "Het project is aangemaakt"
+
+#. Translators: Checkbox label text
+#: ui/preferences-window.glade:58
+msgid "Enable project openning:"
+msgstr "Project openen:"
+
+#. Translators: Entry label text
+#: ui/preferences-window.glade:72
+msgid "Project openning command:"
+msgstr "Opdracht bij openen:"
+
+#. Translators: Entry placeholder text
+#: ui/preferences-window.glade:87
+msgid "Include {path} for project path"
+msgstr "{path} gebruiken als projectlocatie"
+
+#. Translators: Title of preferences category
+#: ui/preferences-window.glade:117
+msgid "Project openning"
+msgstr "Project openen"
+
+#. Translators: Preferences window title
+#: ui/preferences-window.glade:140
+msgid "Valdo GTK Preferences"
+msgstr "Valdo GTK-voorkeuren"
+
+#: src/app.vala:43
+msgid "Copyright © 2021 Vojtěch Perník"
+msgstr "Auteursrecht © 2021 Vojtěch Perník"
+
+#. Translators: Here write your names, or leave it empty. Each name on new line. You can also add email (John Doe <j.doe@example.com>). Do not translate literally!
+#: src/app.vala:49
+msgid "translator-credits"
+msgstr "Heimen Stoffels <vistausss@fastmail.com>"
+
+#: src/app.vala:51
+msgid "GitHub repository"
+msgstr "GitHub-repo"
+
+#: src/page-projects.vala:79
+#, c-format
+msgid "Error opening project: %s"
+msgstr "Het project kan niet worden geopend: %s"
+
+#: src/page-projects.vala:86
+#, c-format
+msgid "Do you really want to remove project %s?"
+msgstr "Weet je zeker dat je ‘%s’ wilt verwijderen?"
+
+#: src/page-templates.vala:50
+#, c-format
+msgid "Error: %s"
+msgstr "Foutmelding: %s"
+
+#: src/page-templates.vala:52
+#, c-format
+msgid "Error, could not enumerate templates: %s"
+msgstr "De sjablonen kunnen niet worden opgehaald: %s"
+
+#: src/page-variables.vala:34
+msgid "Template name:"
+msgstr "Sjabloonnaam:"
+
+#. Add project location chooser to list
+#: src/page-variables.vala:38
+msgid "Project location:"
+msgstr "Projectlocatie:"
+
+#: src/page-variables.vala:39
+msgid "Choose project location"
+msgstr "Kies een projectlocatie"
+
+#: src/page-variables.vala:55
+#, c-format
+msgid "Enter %s:"
+msgstr "Voer %s in:"
+
+#. Add OK button to list
+#: src/page-variables.vala:98
+msgid "Create"
+msgstr "Aanmaken"
+
+#: src/page-variables.vala:116
+msgid "Error: select project location"
+msgstr "Foutmelding: kies een projectlocatie"
+
+#: src/page-variables.vala:126
+#, c-format
+msgid "Error: %s was not specified"
+msgstr "Foutmelding: %s is niet opgegeven"
+
+#: src/page-variables.vala:135
+#, c-format
+msgid "Error: %s must match the pattern %s"
+msgstr "Foutmelding: %s dient overeen te komen met het patroon ‘%s’"
+
+#: src/page-variables.vala:137
+#, c-format
+msgid "Error: %s must be valid email"
+msgstr "Foutmelding: %s dient een geldig e-mailadres te zijn"
+
+#: src/page-variables.vala:142
+#, c-format
+msgid "Regex error: %s"
+msgstr "Regex-foutmelding: %s"
+
+#: src/page-variables.vala:168
+#, c-format
+msgid "Error creating template: %s"
+msgstr "Het sjabloon kan niet worden aangemaakt: %s"
+
+#: src/preferences-window.vala:17
+msgid "This feature is not available when running from the sandbox."
+msgstr "Deze functie is niet beschikbaar binnen de sandbox."
