@@ -87,7 +87,7 @@ msgstr "Preferenze"
 #. Translators: About button title
 #: ui/main-window.glade:33
 msgid "About application"
-msgstr ""Informazioni sull'applicazione"
+msgstr "Informazioni sull'applicazione"
 
 #. Translators: Quit button title
 #: ui/main-window.glade:46
