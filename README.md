@@ -1,3 +1,13 @@
+<table align="center"><tr><td>
+  <h2 align="center">⚠️&ensp;WARNING&ensp;⚠️</h2>
+  <h3 align="center">This project is no longer maintained!</h3>
+  <p>I have decided to end the project for the time being to work on other projects. However, the project is still usable, I just won't be developing it anymore.</p>
+  <p>When there is time, I may return to the project, for now the repository is archived.</p>
+  <p>If you want to get regular updates, switch to <a href="https://github.com/Prince781/valdo">Valdo CLI</a>.</p>
+</td></tr></table>
+
+
+
 <img align="left" alt="Icon" src="https://raw.githubusercontent.com/pervoj/valdo-gtk/master/data/icons/hicolor/scalable/apps/cz.pervoj.valdo-gtk.svg" height="170px">
 
 # Valdo GTK
